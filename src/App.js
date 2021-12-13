@@ -1,7 +1,33 @@
-import logo from './logo.svg';
+import React from 'react'
+//import logo from './logo.svg'
 import './App.css';
+import ArticlePost from './ArticlePost'
 
-function App() {
+function App(){
+  //render(){
+  return(
+    <div className='App'>
+      <header className= "App-header">
+      <div>
+      <h1>Barstool Articles</h1>
+      <ArticlePost/>
+
+    </div>
+    </header>
+    </div>
+  )
+}
+
+/*function App() {
+
+  const [articles, setArticles]= useStates([])
+
+  useEffect(()=>{
+    fetch(" https://www.jalirani.com/files/barstool.json")
+    .then(response=>response.json())
+    .then((data)=> {setArticles(data)})
+  },[])
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -21,5 +47,5 @@ function App() {
     </div>
   );
 }
-
+*/
 export default App;
